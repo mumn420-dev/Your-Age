@@ -3,7 +3,7 @@ document.getElementById('calcBtn').addEventListener('click', function() {
     const resultDiv = document.getElementById('result');
 
     if (!dobString) {
-        resultDiv.innerHTML = "Please select a valid date of birth!";
+        resultDiv.innerHTML = "الرجاء اختيار تاريخ ميلاد صحيح!";
         return;
     }
 
@@ -11,7 +11,7 @@ document.getElementById('calcBtn').addEventListener('click', function() {
     const today = new Date();
 
     if (dob > today) {
-        resultDiv.innerHTML = "Error: Date cannot be in the future!";
+        resultDiv.innerHTML = "خطأ: لا يمكن أن يكون التاريخ في المستقبل!";
         return;
     }
 
@@ -22,7 +22,6 @@ document.getElementById('calcBtn').addEventListener('click', function() {
     // Adjust days if negative
     if (days < 0) {
         months--;
-        // Get days in the previous month
         const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
         days += prevMonth.getDate();
     }
@@ -33,5 +32,5 @@ document.getElementById('calcBtn').addEventListener('click', function() {
         months += 12;
     }
 
-    resultDiv.innerHTML = `You are <br><span>${years} years, ${months} months, and ${days} days</span> old!`;
+    resultDiv.innerHTML = `<span>${years} سنة، و ${months} شهر، و ${days} يوم</span>`;
 });
