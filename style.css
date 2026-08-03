@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Cairo', Tahoma, sans-serif;
     background: linear-gradient(135deg, #74b9ff, #0984e3);
     height: 100vh;
     display: flex;
@@ -14,12 +14,13 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 320px;
+    width: 340px;
 }
 
 h2 {
     color: #2d3436;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 p {
@@ -35,6 +36,7 @@ input[type="date"] {
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
+    text-align: center;
 }
 
 button {
@@ -58,5 +60,5 @@ button:hover {
     font-size: 16px;
     color: #2d3436;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1.6;
 }
